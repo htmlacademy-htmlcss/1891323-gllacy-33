@@ -39,154 +39,93 @@
     </header>
 
       <main class="main-index">
-        <!-- Первый розовый слайд (Основной)-->
-        <section class="showroom">
-          <h1 class="title">Нежный пломбир с клубничным джемом</h1>
-          <p>Натуральное мороженое из свежих сливоки молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-            <form class="main-order">
-              <input type="button" href="#" value="Заказать">
-            </form>
+        <section class="slider-wrapper">
 
-        <div class="main-pagination">
-          <ul class="slider-pagination">
-            <li class="pagination-item">
-              <button class="slider-pagination-button-current" type="button"></button>
-            </li>
-            <li class="pagination-item">
-              <button class="slider-pagination-button" type="button"></button>
-            </li>
-            <li class="pagination-item">
-              <button class="slider-pagination-button" type="button"></button>
-            </li>
-          </ul>
-        </div>
-
-          <div class="slideshow">
-            <button class="slideshow-button left-button" type="button"></button>
-              <article class="slideshow-ice"><img src="" alt="Клубничное мороженное"></article>
-            <button class="slideshow-button right-button" type="button"></button>
+          
+          <div class="slider">
+            
+            <article class="slider-item">
+              <h2 class="slider-item-title">Нежный пломбир с клубничным джемом</h2>
+              <p class="slider-item-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом –
+                это идеальный десерт для всей семьи.</p>
+              <button class="slider-item-button">Заказать</button>
+              <img class="slider-item-img" src="" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
+            </article>
+           
+        
+            
+            <article class="slider-item">
+              <h2 class="slider-item-title">Сливочное мороженое со вкусом банана</h2>
+              <p class="slider-item-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+              <button class="slider-item-button">Заказать</button>
+              <img class="slider-item-img" src="" width="306" height="507" alt="Банановое мороженное">
+            </article>
+            
+        
+            
+            <article class="slider-item">
+              <h2 class="slider-item-title">Карамельный пломбир с маршмеллоу</h2>
+              <p class="slider-item-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+              <button class="slider-item-button">Заказать</button>
+              <img class="slider-item-img" src="" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
+            </article>
+            
+        
           </div>
-          <div class="slideshow">
-            <article class="slideshow-ice"><img src="" alt="Банановое мороженное"></article>
+          <!-- Конец блока слайдеров -->
+        
+          <!-- Начало кнопок слайдера -->
+          <a class="slider-show-next" href="#">Следующий</a>
+          <a class="slider-show-prev" href="#">Предыдущий</a>
+          <!-- Конец кнопок слайдера -->
+      
+        
+          <div class="slider-footer">
+        
+            <!-- Точечная пагинация начало -->
+        
+            <ul class="slider-bullets">
+              <li class="slider-bullets_item">
+                <a class="slider-bullets_item-link" href="">1</a>
+              </li>
+              <li class="slider-bullets_item">
+                <a class="slider-bullets_item-link" href="">2</a>
+              </li>
+              <li class="slider-bullets_item">
+                <a class="slider-bullets_item-link" href="">3</a>
+              </li>
+            </ul>
+        
+            <!-- Точечная пагинация конец -->
+        
+            <!-- Иконки соц.сетей -->
+        
+            <ul class="socials">
+        
+              <li class="socials__item">
+                <a class="socials_link socials_link--vk" href="https://vk.com/htmlacademy" target="_blank">
+                  Вконтакте
+                </a>
+              </li>
+        
+              <li class="socials__item">
+                <a class="socials_link socials_link--fb" href="facebook.com/htmlacademy/" target="_blank">
+                  Facebook
+                </a>
+              </li>
+        
+              <li class="socials__item">
+                <a class="socials_link socials_link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
+                  instagram
+                </a>
+              </li>
+            </ul>
+        
+            <!--Конец иконок соц.сетей  -->
+        
           </div>
-          <div class="slideshow">
-            <article class="slideshow-ice"><img src="" alt="Карамельное мороженное с маршмеллоу"></article>
-          </div>
-
-          <div class="header-social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class=social-vkontakte href="https://vk.com/htmlacademy"><img src="" alt="Иконка вконтакте"></a>
-            </li>
-            <li class="social-item">
-              <a class=social-facebook href="facebook.com/htmlacademy/"><img src="" alt="Иконка фейсбука"></a>
-            </li>
-            <li class="social-item">
-              <a class=social-instagram href="https://www.instagram.com/htmlacademy/"><img src="" alt="Иконка инстаграма"></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-<!-- Синий слайд (Второй)-->
-
-      <section class="showroom">
-        <h1 class="title">Сливочное мороженое со вкусом банана</h1>
-        <p>Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-          <form class="main-order">
-            <input type="button" href="#" value="Заказать">
-          </form>
-
-      <div class="main-pagination">
-        <ul class="slider-pagination">
-          <li class="pagination-item">
-            <button class="slider-pagination-button" type="button"></button>
-          </li>
-          <li class="pagination-item">
-            <button class="slider-pagination-button-current" type="button"></button>
-          </li>
-          <li class="pagination-item">
-            <button class="slider-pagination-button" type="button"></button>
-          </li>
-        </ul>
-      </div>
-
-        <div class="slideshow">
-          <button class="slideshow-button left-button" type="button"></button>
-            <article class="slideshow-ice"><img src="" alt="Банановое мороженное"></article>
-          <button class="slideshow-button right-button" type="button"></button>
-        </div>
-        <div class="slideshow">
-          <article class="slideshow-ice"><img src="" alt="Карамельное мороженное с маршмеллоу"></article>
-        </div>
-        <div class="slideshow">
-          <article class="slideshow-ice"><img src="" alt="Клубничное мороженное"></article>
-        </div>
-
-        <div class="header-social">
-        <ul class="social-list">
-          <li class="social-item">
-            <a class=social-vkontakte href="https://vk.com/htmlacademy"><img src="" alt="Иконка вконтакте"></a>
-          </li>
-          <li class="social-item">
-            <a class=social-facebook href="facebook.com/htmlacademy/"><img src="" alt="Иконка фейсбука"></a>
-          </li>
-          <li class="social-item">
-            <a class=social-instagram href="https://www.instagram.com/htmlacademy/"><img src="" alt="Иконка инстаграма"></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-<!-- Желтый слайд (Третий. Последний)-->
-
-    <section class="showroom">
-      <h1 class="title">Карамельный пломбир с маршмеллоу</h1>
-      <p>Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-        <form class="main-order">
-          <input type="button" href="#" value="Заказать">
-        </form>
-
-    <div class="main-pagination">
-      <ul class="slider-pagination">
-        <li class="pagination-item">
-          <button class="slider-pagination-button" type="button"></button>
-        </li>
-        <li class="pagination-item">
-          <button class="slider-pagination-button" type="button"></button>
-        </li>
-        <li class="pagination-item">
-          <button class="slider-pagination-button-current" type="button"></button>
-        </li>
-      </ul>
-    </div>
-
-      <div class="slideshow">
-        <button class="slideshow-button left-button" type="button"></button>
-          <article class="slideshow-ice"><img src="" alt="Карамельное мороженное с маршмеллоу"></article>
-        <button class="slideshow-button right-button" type="button"></button>
-      </div>
-      <div class="slideshow">
-        <article class="slideshow-ice"><img src="" alt="Клубничное мороженное"></article>
-      </div>
-      <div class="slideshow">
-        <article class="slideshow-ice"><img src="" alt="Банановое мороженное"></article>
-      </div>
-
-      <div class="header-social">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class=social-vkontakte href="https://vk.com/htmlacademy"><img src="" alt="Иконка вконтакте"></a>
-        </li>
-        <li class="social-item">
-          <a class=social-facebook href="facebook.com/htmlacademy/"><img src="" alt="Иконка фейсбука"></a>
-        </li>
-        <li class="social-item">
-          <a class=social-instagram href="https://www.instagram.com/htmlacademy/"><img src="" alt="Иконка инстаграма"></a>
-        </li>
-      </ul>
-    </div>
-  </section>
+        
+        </section>
 
 
 
@@ -198,22 +137,18 @@
           <h2 class="title">Заказывайте мороженое и получайте подарки!</h1>
         </div>
 
-        <section class="first-banner">
+        <section class="action-banner">
           <h3 class="subtitle">Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <form class="main-order gift-button">
-            <input type="button" href="#" value="Хочу подарок">
-          </form>
+          <a class="want-gift" href="#">Хочу подарок</a>
             <div class="banner-image">
               <img src="" alt="Картинка подарка">
             </div>
         </section>
-        <section class="first-banner">
+        <section class="action-banner">
           <h3 class="subtitle">Маршмеллоу даром!</h2>
           <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-          <form class="main-order gift-button">
-            <input type="button" href="#" value="Хочу подарок">
-          </form>
+          <a class="want-gift" href="#">Хочу подарок</a>
             <div class="banner-image">
               <img src="" alt="Картинка подарка">
             </div>
@@ -271,26 +206,26 @@
           <section class="ceo-main">
             <ul class=ceo-list>
               <li class="ceo-item">
-                <i class="ceo-icon"></i>
+                <i></i>
                 <p>Всё наше мороженое изготавливается на собственном производстве
                    с использованием современного оборудования и проверенных временем технологий.
                 </p>
               </li>
               <li class="ceo-item">
-                <i class="ceo-icon"></i>
+                <i></i>
                 <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
                   и добавки произведены из натурального сырья.
                 </p>
               </li>
               <li class="ceo-item">
-                <i class="ceo-icon"></i>
+                <i></i>
                 <p>Закупка ингредиентов производится только
                   у проверенных фермерских хозяйств, с которыми
                   нас связывает долговременное сотрудничество.
                 </p>
               </li>
               <li class="ceo-item">
-                <i class="ceo-icon"></i>
+                <i></i>
                 <p>Доставка нашего мороженого осуществляется в специальном термопаке,
                    который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
                   </p>
@@ -320,22 +255,23 @@
       </section>
 
       <section class="ice-delivery">
-        <section class="ice-delivery-info">
+        <div class="ice-delivery-info">
           <h2 class="title">Доставка любимого мороженого на дом</h2>
           <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? 
             Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
           </p>
-        </section>
-        <section class="ice-delivery-form">
+        </div>
+
+        <div class="ice-delivery-form">
           <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="ice-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="ice-delivery-form-date">
                 <label for="ice-delivery-form-date">Дата <i class="ice-delivery-form-icon"></i></label>
-                <input type="text" id="ice-delivery-form-date" name="ice-delivery-form-date" placeholder="01.04.2020">
+                <input type="date" id="ice-delivery-form-date" name="ice-delivery-form-date" placeholder="01.04.2020">
               </p>
               <p class="ice-delivery-form-phone">
                 <label for="ice-delivery-form-phone">Телефон</label>
-                <input type="text" id="ice-delivery-form-phone" name="ice-delivery-form-phone" placeholder="+7 800 999-00-00">
+                <input type="tel" id="ice-delivery-form-phone" name="ice-delivery-form-phone" placeholder="+7 800 999-00-00">
               </p>
               <p class="ice-delivery-form-address">
                 <label for="ice-delivery-form-address">Дата <i class="ice-delivery-form-icon"></i></label>
@@ -343,7 +279,7 @@
               </p>
               <button class="send-button" type="submit">Отправить</button>
             </form>
-        </section>
+          </div>
       </section>
 
       <section class="feedback-background">  
@@ -360,18 +296,28 @@
     </main>
 
     <section class="header-social">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class=social-vkontakte href="https://vk.com/htmlacademy"><img src="" alt="Иконка вконтакте"></a>
+      <ul class="socials">
+        
+        <li class="socials__item">
+          <a class="socials_link socials_link--vk" href="https://vk.com/htmlacademy" target="_blank">
+            Вконтакте
+          </a>
         </li>
-        <li class="social-item">
-          <a class=social-facebook href="facebook.com/htmlacademy/"><img src="" alt="Иконка фейсбука"></a>
+  
+        <li class="socials__item">
+          <a class="socials_link socials_link--fb" href="facebook.com/htmlacademy/" target="_blank">
+            Facebook
+          </a>
         </li>
-        <li class="social-item">
-          <a class=social-instagram href="https://www.instagram.com/htmlacademy/"><img src="" alt="Иконка инстаграма"></a>
+  
+        <li class="socials__item">
+          <a class="socials_link socials_link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
+            instagram
+          </a>
         </li>
       </ul>
 
+      
       <section class="faq">
         <ul class="faq-list">
           <li class="faq-item">
@@ -391,7 +337,7 @@
 
       <section class="copyright">
 
-        <a class="copyright-logo" href="https://htmlacademy.ru/"><img src="" alt=html-logo></a>
+        <a class="copyright-logo" href="https://htmlacademy.ru/"><i></i></a>
         <p>Сделано в <a class="copyright-link">.html academy</a> © 2021</p>
       </section>
     </footer>
