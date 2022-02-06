@@ -50,10 +50,6 @@ body {
     border-radius: 26px;
 }
 
-.slide-item-button {
-    border: 4px solid rgba(252, 252, 252, 0.4);
-}
-
 /* Pages */
 .page-header {
     color: #2D3440;
@@ -239,4 +235,6 @@ label {
 .copyright-link {
     color: #2D3440;
 }
+
+
 
