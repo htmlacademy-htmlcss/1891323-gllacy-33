@@ -22,8 +22,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
 
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "inter";
     font-size: 16px;
     line-height: 22px;
@@ -55,6 +62,7 @@ body {
     color: #2D3440;
 }
 
+
 /* NAV links*/
 .navigation-link {
     line-height: 20px;
@@ -74,6 +82,11 @@ body {
     color: #2D3440;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+/* Slider */
 .slider-item-title {
     font-weight: 900;
     font-size: 36px;
@@ -85,6 +98,10 @@ body {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
+}
+
+.action-banner {
+    background-color: #FF7799;
 }
 
 /* Gift cards*/
@@ -129,8 +146,10 @@ body {
 }
 
 /* Gllacy CEO */
-.ceo {
-    background-color: white;
+
+.ceo-background {
+background-image: url("../images/images-main/faq/wafer-backbround.jpg");
+background-repeat: no-repeat;
 }
 
 .ceo-title {
@@ -147,6 +166,11 @@ body {
 }
 
 /* News cards */
+.news-first-card {
+    background-image: url("../images/images-main/form/form.jpg");
+    background-repeat: no-repeat;
+}
+
 .news-first-card p{
     font-size: 16px;
     line-height: 20px;
@@ -161,9 +185,13 @@ body {
     text-decoration: none;
 }
 
+.news-second-card-background {
+    background-image: url("../images/images-main/form/email-background\ .jpg");
+    background-repeat: no-repeat;
+}
+
 .news-second-card {
     color:#565C66;
-    background-color: white;
 }
 
 /* Delivery info */
@@ -173,13 +201,19 @@ body {
     line-height: 46px;
 }
 
+.ice-delivery-info {
+    background-image: url(../images/images-main/form/personal-form-background.jpg);
+    background-repeat: no-repeat;
+}
+
 .ice-delivery-info p {
     color: #565C66;
 }
 
 /* Delivery info form */
 .ice-delivery-form {
-    background-color: white;
+    background-image: url("../images/images-main/form/contacts-background.jpg");
+    background-repeat: no-repeat;
 }
 
 .ice-delivery-form p {
