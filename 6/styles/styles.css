@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "inter";
+    font-size: 16px;
+    line-height: 22px;
+    color: #2D3440;
+    background-color: #FEAFC3;
+}
+
+/* Page buttons */
+.button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    color:#2D3440;
+}
+
+.header-button {
+    font-weight: 400;
+    font-size: 14px;
+    background: #FCFCFC;
+    opacity: 0.3;
+    border-radius: 26px;
+}
+
+/* Pages */
+.page-header {
+    color: #2D3440;
+}
+
+
+/* NAV links*/
+.navigation-link {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+/* Header phone number */
+.contacts-phone {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+/* Slider */
+.slider-item-title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.banners-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.action-banner {
+    background-color: #FF7799;
+}
+
+/* Gift cards*/
+.banner-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.subtitle-description {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* Popular products title*/
+.products-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+
+/* Product cards */
+.product-card {
+    font-size:16px;
+    line-height: 22px;
+    color: #565C66;
+    background-color: white;
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440
+}
+
+.product-card b {
+    color:#2D3440;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Gllacy CEO */
+
+.ceo-background {
+background-image: url("../images/images-main/faq/wafer-backbround.jpg");
+background-repeat: no-repeat;
+}
+
+.ceo-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.ceo-list p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+/* News cards */
+.news-first-card {
+    background-image: url("../images/images-main/form/form.jpg");
+    background-repeat: no-repeat;
+}
+
+.news-first-card p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.news-first-card a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color:#2D3440;
+    text-decoration: none;
+}
+
+.news-second-card-background {
+    background-image: url("../images/images-main/form/email-background\ .jpg");
+    background-repeat: no-repeat;
+}
+
+.news-second-card {
+    color:#565C66;
+}
+
+/* Delivery info */
+.ice-delivery-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.ice-delivery-info {
+    background-image: url(../images/images-main/form/personal-form-background.jpg);
+    background-repeat: no-repeat;
+}
+
+.ice-delivery-info p {
+    color: #565C66;
+}
+
+/* Delivery info form */
+.ice-delivery-form {
+    background-image: url("../images/images-main/form/contacts-background.jpg");
+    background-repeat: no-repeat;
+}
+
+.ice-delivery-form p {
+    color: #565C66
+}
+
+label {
+    font-size: 16px;
+    line-height: 20px;
+    color:#2D3440;
+}
+
+/* Contact info */
+.feedback {
+    background-color: white;
+}
+
+.feedback p {
+    color: #565C66
+}
+
+.feedback b,
+.feedback-contact-phone {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.feedback-times {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Page footer */
+.faq-item a {
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #2D3440;
+}
+.deliveryman {
+    font-weight: 700;
+}
+
+.copyright p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D3440;
+}
+
+.copyright-link {
+    color: #2D3440;
+}
+
+
+
+/* Catalog styles */
+.breadcrumbs-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: #2D3440
+}
+
+.inner-header-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.pagination-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color:#2D3440
+
+}
+
+
+
+
