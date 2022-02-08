@@ -40,6 +40,7 @@ body {
 
 /* Page buttons */
 .button {
+    font-family: inter;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -50,6 +51,7 @@ body {
 }
 
 .header-button {
+    font-family: inter;
     font-weight: 400;
     font-size: 14px;
     background-color: #FFCBD8;
@@ -231,7 +233,7 @@ background-repeat: no-repeat;
 }
 
 .news-second-card-background {
-    background-image: url("../images/images-main/form/email-background\ .jpg");
+    background-image: url("../images/images-main/form/email-background.jpg");
     background-repeat: no-repeat;
 }
 
@@ -257,6 +259,10 @@ background-repeat: no-repeat;
 
 /* Delivery info form */
 .ice-delivery-form {
+    font-family: inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
     background-image: url("../images/images-main/form/contacts-background.jpg");
     background-repeat: no-repeat;
 }
@@ -329,11 +335,13 @@ label {
 }
 
 .filter-accept-button {
+    font-family: inter;
     background-color: #FFCBD8;
     color:#2D3440;
 }
 
 .show-more-button {
+    font-family: inter;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -380,10 +388,7 @@ label {
     color: #2D3440;
 }
 
-.select-control,
-.popular,
-.cheap,
-.expensive {
+.select-control {
     font-family: inter;
     font-weight: 400;
     font-size: 14px;
