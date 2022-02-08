@@ -52,9 +52,28 @@ body {
 .header-button {
     font-weight: 400;
     font-size: 14px;
-    background: #FCFCFC;
-    opacity: 0.3;
+    background-color: #FFCBD8;
     border-radius: 26px;
+}
+
+.slider-item-button {
+    background-color: white;
+    color: #2D3440;
+}
+
+.want-gift-button {
+    background-color: white;
+    color: #2D3440
+}
+
+.send-button {
+    background-color: #FF2F64;
+    color: white;
+}
+
+.feedback-form-button {
+    background-color: #FF2F64;
+    color: white;
 }
 
 /* Pages */
@@ -64,6 +83,27 @@ body {
 
 
 /* NAV links*/
+.logo {
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 198px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    max-width: 419px;
+    margin-left: auto;
+}
+
 .navigation-link {
     line-height: 20px;
     font-size: 16px;
@@ -84,6 +124,11 @@ body {
 
 .main-container {
     flex-grow: 1;
+}
+
+.page-container {
+    width: 1170px;
+    margin: 0 auto;
 }
 
 /* Slider */
@@ -272,7 +317,30 @@ label {
 
 
 
+
+
 /* Catalog styles */
+
+/* Buttons */
+.navigation-link-current {
+    background-color: #FF2F64;
+    color: white;
+    text-decoration: none;
+}
+
+.filter-accept-button {
+    background-color: #FFCBD8;
+    color:#2D3440;
+}
+
+.show-more-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: white;
+    color: #2D3440;
+}
+
 .breadcrumbs-link {
     font-weight: 700;
     text-decoration: none;
@@ -292,6 +360,35 @@ label {
     text-decoration: none;
     color:#2D3440
 
+}
+
+.catalog-filter-group {
+    background-color: #FFCBD8;
+}
+
+.catalog-filter-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.control-input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.select-control,
+.popular,
+.cheap,
+.expensive {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:#2D3440;
 }
 
 
