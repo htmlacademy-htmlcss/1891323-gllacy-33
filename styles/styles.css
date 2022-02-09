@@ -22,8 +22,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
 
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "inter";
     font-size: 16px;
     line-height: 22px;
@@ -33,6 +40,7 @@ body {
 
 /* Page buttons */
 .button {
+    font-family: inter;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -43,11 +51,31 @@ body {
 }
 
 .header-button {
+    font-family: inter;
     font-weight: 400;
     font-size: 14px;
-    background: #FCFCFC;
-    opacity: 0.3;
+    background-color: #FFCBD8;
     border-radius: 26px;
+}
+
+.slider-item-button {
+    background-color: white;
+    color: #2D3440;
+}
+
+.want-gift-button {
+    background-color: white;
+    color: #2D3440
+}
+
+.send-button {
+    background-color: #FF2F64;
+    color: white;
+}
+
+.feedback-form-button {
+    background-color: #FF2F64;
+    color: white;
 }
 
 /* Pages */
@@ -55,7 +83,29 @@ body {
     color: #2D3440;
 }
 
+
 /* NAV links*/
+.logo {
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 198px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    max-width: 419px;
+    margin-left: auto;
+}
+
 .navigation-link {
     line-height: 20px;
     font-size: 16px;
@@ -74,6 +124,16 @@ body {
     color: #2D3440;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* Slider */
 .slider-item-title {
     font-weight: 900;
     font-size: 36px;
@@ -85,6 +145,10 @@ body {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
+}
+
+.action-banner {
+    background-color: #FF7799;
 }
 
 /* Gift cards*/
@@ -129,8 +193,10 @@ body {
 }
 
 /* Gllacy CEO */
-.ceo {
-    background-color: white;
+
+.ceo-background {
+background-image: url("../images/images-main/faq/wafer-backbround.jpg");
+background-repeat: no-repeat;
 }
 
 .ceo-title {
@@ -147,6 +213,11 @@ body {
 }
 
 /* News cards */
+.news-first-card {
+    background-image: url("../images/images-main/form/form.jpg");
+    background-repeat: no-repeat;
+}
+
 .news-first-card p{
     font-size: 16px;
     line-height: 20px;
@@ -161,9 +232,13 @@ body {
     text-decoration: none;
 }
 
+.news-second-card-background {
+    background-image: url("../images/images-main/form/email-background.jpg");
+    background-repeat: no-repeat;
+}
+
 .news-second-card {
     color:#565C66;
-    background-color: white;
 }
 
 /* Delivery info */
@@ -173,13 +248,23 @@ body {
     line-height: 46px;
 }
 
+.ice-delivery-info {
+    background-image: url(../images/images-main/form/personal-form-background.jpg);
+    background-repeat: no-repeat;
+}
+
 .ice-delivery-info p {
     color: #565C66;
 }
 
 /* Delivery info form */
 .ice-delivery-form {
-    background-color: white;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-image: url("../images/images-main/form/contacts-background.jpg");
+    background-repeat: no-repeat;
 }
 
 .ice-delivery-form p {
@@ -238,7 +323,32 @@ label {
 
 
 
+
+
 /* Catalog styles */
+
+/* Buttons */
+.navigation-link-current {
+    background-color: #FF2F64;
+    color: white;
+    text-decoration: none;
+}
+
+.filter-accept-button {
+    font-family: inter;
+    background-color: #FFCBD8;
+    color:#2D3440;
+}
+
+.show-more-button {
+    font-family: inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: white;
+    color: #2D3440;
+}
+
 .breadcrumbs-link {
     font-weight: 700;
     text-decoration: none;
@@ -258,6 +368,32 @@ label {
     text-decoration: none;
     color:#2D3440
 
+}
+
+.catalog-filter-group {
+    background-color: #FFCBD8;
+}
+
+.catalog-filter-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.control-input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.select-control {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:#2D3440;
 }
 
 
