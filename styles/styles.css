@@ -40,6 +40,7 @@ body {
 
 /* Page buttons */
 .button {
+    padding: 12px 32px;
     font-family: inter;
     font-style: normal;
     font-weight: 700;
@@ -47,25 +48,63 @@ body {
     line-height: 20px;
     text-decoration: none;
     text-align: center;
+    border-radius: 26px;
+    border: 4px solid #FFCBD8;
     color:#2D3440;
+    background-color: #FFCBD8;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .header-button {
+    padding: 6px 16px 6px 40px;
     font-family: inter;
     font-weight: 400;
     font-size: 14px;
     background-color: #FFCBD8;
-    border-radius: 26px;
+}
+
+.search-button {
+    padding: 7px;
 }
 
 .slider-item-button {
+    margin-top: 60px;
     background-color: white;
     color: #2D3440;
 }
 
+.slider-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 38px;
+    height: 38px;
+    border-radius: 26px;
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #FCFCFC;
+}
+
+.next-button {
+    margin-right: 274px;
+}
+
 .want-gift-button {
-    background-color: white;
-    color: #2D3440
+    display: flex;
+    position: absolute;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #FCFCFC;
+    color: #2D3440;
+}
+
+.add-to-basket {
+    height: 32px;
+    width: 32px;
+    background-color: #FF2F64;
+    border: none;
+    border-radius: 26px;
 }
 
 .send-button {
@@ -77,6 +116,8 @@ body {
     background-color: #FF2F64;
     color: white;
 }
+
+
 
 /* Pages */
 .page-header {
@@ -134,10 +175,75 @@ body {
 }
 
 /* Slider */
+.slider-wrapper {
+    display: flex;
+}
+
 .slider-item-title {
     font-weight: 900;
     font-size: 36px;
     line-height: 46px;
+}
+
+.slider-item-title {
+    max-width: 470px;
+}
+
+.slider-item-description {
+    max-width: 414px;
+}
+
+/* Slider Pagination */
+.slider-bullets {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.slider-bullets-item-button {
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background: #FCFCFC;
+    opacity: 0.3;
+}
+
+.slider-bullets-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.slider-bullets-item-button-current {
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background: #FCFCFC;
+}
+
+/* Social Media */
+.socials {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.socials__item {
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    background-color: #FEAFC3;
+    border: 2px solid rgba(252, 252, 252, 0.2);
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 16px;
+}
+
+
+/* Gift cards*/
+.banners {
+    display: flex;
 }
 
 .banners-title {
@@ -145,25 +251,52 @@ body {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
+    max-width: 443px;
+    margin: 56px auto; 
 }
 
 .action-banner {
+    display: flex;
+    flex-direction: row;
+    width: 570px;
     background-color: #FF7799;
+    padding-left: 40px;
+    border-radius: 16px;
 }
 
-/* Gift cards*/
+.action-banner:first-child {
+    margin-right: 30px;
+}
+
 .banner-subtitle {
+    margin-top: 40px;
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    max-width: 294px;
 }
 
 .subtitle-description {
+    margin-bottom: 32px;
     font-size: 16px;
     line-height: 22px;
+    max-width: 321px;
 }
 
-/* Popular products title*/
+.banner-image-first {
+    padding-top: 28px;
+    padding-right: 15px;
+}
+
+.banner-image-second {
+    padding-top: 19px;
+    padding-right: 7px;
+}
+
+
+
+/* Popular products title */
 .products-title {
     font-weight: 900;
     font-size: 32px;
@@ -172,11 +305,28 @@ body {
 }
 
 /* Product cards */
+.part-title {
+    max-width: 527px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 56px;
+}
+
+.popular-products {
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+
 .product-card {
-    font-size:16px;
+    margin: 0 auto;
+    font-size: 16px;
     line-height: 22px;
+    text-align: center;
+    width: 272px;
     color: #565C66;
     background-color: white;
+    border-radius: 8px;
 }
 
 .subtitle {
@@ -193,10 +343,18 @@ body {
 }
 
 /* Gllacy CEO */
-
 .ceo-background {
-background-image: url("../images/images-main/faq/wafer-backbround.jpg");
-background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 80px;
+    padding: 24px;
+    background-image: url("../images/images-main/faq/wafer-backbround.jpg");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.ceo {
+    background: #FCFCFC;
+    border-radius: 16px;
 }
 
 .ceo-title {
@@ -213,18 +371,37 @@ background-repeat: no-repeat;
 }
 
 /* News cards */
-.news-first-card {
-    background-image: url("../images/images-main/form/form.jpg");
-    background-repeat: no-repeat;
+.news {
+    display: flex;
+    margin-bottom: 76px;
+    justify-content: space-between;
 }
 
-.news-first-card p{
+.news-card {
+    margin: 0 auto;
+    width: 570px;
+    border-radius: 16px;
+}
+
+.news-first-card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32.59px;
+    padding-bottom: 63.15px;
+    padding-left: 32px;
+    background-image: url("../images/images-main/form/form.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.news-subtitle {
     font-size: 16px;
     line-height: 20px;
     color: #565C66;
 }
 
-.news-first-card a {
+.news-title-link {
+    max-width: 303px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -241,20 +418,45 @@ background-repeat: no-repeat;
     color:#565C66;
 }
 
-/* Delivery info */
+/* Delivery info section */
+.ice-delivery {
+    border-radius: 16px;
+    background-image: url(../images/images-main/form/personal-form-background.jpg);
+    background-repeat: no-repeat;
+}
+
+.ice-delivery-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 167px;
+    padding-left: 100px;
+    max-width: 371px;
+}
+
 .ice-delivery-title {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
 }
 
-.ice-delivery-info {
-    background-image: url(../images/images-main/form/personal-form-background.jpg);
-    background-repeat: no-repeat;
-}
-
 .ice-delivery-info p {
     color: #565C66;
+}
+
+.ice-delivery-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #FCFCFC;
+    border-radius: 16px;
+}
+
+.input {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
 }
 
 /* Delivery info form */
@@ -263,8 +465,6 @@ background-repeat: no-repeat;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    background-image: url("../images/images-main/form/contacts-background.jpg");
-    background-repeat: no-repeat;
 }
 
 .ice-delivery-form p {
@@ -278,8 +478,12 @@ label {
 }
 
 /* Contact info */
+.feedback-background {
+    background-image: url("../images/images-main/form/contacts-background.jpg");
+    background-repeat: no-repeat;
+}
+
 .feedback {
-    background-color: white;
 }
 
 .feedback p {
