@@ -8,11 +8,11 @@
   <body>
     <header class="page-header">
   
+      <header class="page-header">
         <nav class="navigation">
-          <a class="page-header-logo" href="index.html">
+  
             <img class="logo" src="images/images-header/gllacy-logo.svg" width="137" height="56" alt="Логотип магазина Глейси">
-        </a>
-        
+  
           <ul class="navigation-list">
             <li class="navigation-item"> 
               <a class="navigation-link-current" href="catalog.html">Каталог</a>
@@ -30,19 +30,21 @@
               <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item">
-              <button class="header-button">Поиск</button>
+              <button class="button header-button search-button">Поиск</button>
             </li>
             <li class="navigation-item">
-              <button class="header-button">Вход</button>
+              <button class="button header-button signIn-button">Вход</button>
             </li>
             <li class="navigation-item">
-              <button class="header-button">2 товара</button>
+              <button class="button header-button cart-button">2 товара</button>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main-inner main-container">
+        <div class="page-container">
+
         <header class="inner-header">
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -254,7 +256,7 @@
 
         <section class="multi-pagination">
           <div class="pagination-wrapper"> 
-            <button class="show-more-button">Показать ещё</button>
+            <button class="button show-more-button">Показать ещё</button>
 
             <ul class="pagination">
               <li class="pagination-item">
@@ -285,55 +287,62 @@
             </ul>
           </div>
         </section>
+
+        </div>
       </main>
 
       <footer class="page-footer">
-      
+        <div class="page-footer-container">
+  
         <section class="footer-social">
-         <ul class="socials">
-           
+          <ul class="socials">
+          
+            <li class="socials__item">
+              <a class="socials_link socials_link--vk" href="https://vk.com/htmlacademy" target="_blank">
+               VK
+             </a>
+            </li>
+    
            <li class="socials__item">
-             <a class="socials_link socials_link--vk" href="https://vk.com/htmlacademy" target="_blank">
-               Вконтакте
+              <a class="socials_link socials_link--fb" href="facebook.com/htmlacademy/" target="_blank">
+               FB
              </a>
            </li>
-     
+    
            <li class="socials__item">
-             <a class="socials_link socials_link--fb" href="facebook.com/htmlacademy/" target="_blank">
-               Facebook
-             </a>
-           </li>
-     
-           <li class="socials__item">
-             <a class="socials_link socials_link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
-               instagram
-             </a>
-           </li>
-         </ul>
-   
-         <section class="faq">
-           <ul class="faq-list">
-             <li class="faq-item">
-               <a class="deliveryman" href="#">Для доставщиков</a>
-             </li>
-             <li class="faq-item">
-               <a class="faq-link" href="#">О производстве</a>
-             </li>
-             <li class="faq-item">
-               <a class="faq-link" href="#">Наши документты</a>
-             </li>
-             <li class="faq-item">
-               <a class="faq-link" href="#">Экологические стандарты</a>
-             </li>
-           </ul>
-         </section>
-   
-         <section class="copyright">
-   
-           <a class="copyright-logo" href="https://htmlacademy.ru/"><img src="images/images-footer/logo_htmlacademy.svg" alt="Лого Академии"></a>
-           <p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a> © 2021</p>
-         </section>
-      </section>
-    </footer>
+              <a class="socials_link socials_link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
+               IN
+              </a>
+            </li>
+          </ul>
+          </section>
+  
+  
+          <section class="faq">
+            <ul class="faq-list">
+              <li class="faq-item">
+                <a class="deliveryman" href="#">Для доставщиков</a>
+              </li>
+              <li class="faq-item">
+                <a class="faq-link" href="#">О производстве</a>
+              </li>
+              <li class="faq-item">
+                <a class="faq-link" href="#">Наши документты</a>
+              </li>
+              <li class="faq-item">
+                <a class="faq-link" href="#">Экологические стандарты</a>
+              </li>
+            </ul>
+          </section>
+  
+          <section class="copyright">
+            <a class="copyright-logo" href="https://htmlacademy.ru/"><img src="images/images-footer/logo_htmlacademy.svg" width="93" height="26,71" alt="Логотип академии"></a>
+            <p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a> © 2021</p>
+          </section>
+  
+        </div>
+      </footer>
+      
+    
   </body>
 </html>

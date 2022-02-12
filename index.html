@@ -127,19 +127,19 @@
 
       <section class="banners">
 
-        <div class="action-banner">
+        <div class="action-banner action-banner-first">
           <div class="banner-text-container">
             <h3 class="banner-subtitle">Малинка даром!</h3>
-            <p class="subtitle-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <p class="subtitle-description first-banner-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="button want-gift-button" href="#">Хочу подарок</a>
           </div>
             <img class="banner-image-first" src="images/images-main/action-cards/raspberry.png" width="181" height="240" alt="Картинка подарка">
         </div>
 
-        <div class="action-banner">
+        <div class="action-banner action-banner-second">
           <div class="banner-text-container">
             <h3 class="banner-subtitle">Маршмеллоу даром!</h3>
-            <p class="subtitle-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+            <p class="subtitle-description second-banner-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
             <a class="button want-gift-button" href="#">Хочу подарок</a>
           </div>
             <img class="banner-image-second" src="images/images-main/action-cards/marshmallow.png" width="232" height="249" alt="Картинка подарка">
@@ -245,31 +245,34 @@
       </section>
 
       <section class="ice-delivery">
-        <div class="ice-delivery-info">
-          <h2 class="ice-delivery-title">Доставка любимого мороженого на дом</h2>
-          <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? 
-            Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
-          </p>
+        <section class="ice-delivery-content">
+
+          <div class="ice-delivery-info">
+            <h2 class="ice-delivery-title">Доставка любимого мороженого на дом</h2>
+            <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? 
+               Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
+            </p>
         </div>
 
-        <div class="ice-delivery-form">
-          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-            <form class="ice-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="ice-delivery-form-date">
-                <label for="ice-delivery-form-date">Дата <i class="ice-delivery-form-icon"></i></label>
-                <input type="date" id="ice-delivery-form-date" name="ice-delivery-form-date" placeholder="01.04.2020">
-              </p>
-              <p class="ice-delivery-form-phone">
-                <label for="ice-delivery-form-phone">Телефон</label>
-                <input type="tel" id="ice-delivery-form-phone" name="ice-delivery-form-phone" placeholder="+7 800 999-00-00">
-              </p>
-              <p class="ice-delivery-form-address">
-                <label for="ice-delivery-form-address">Дата <i class="ice-delivery-form-icon"></i></label>
-                <input type="text" id="ice-delivery-form-address" name="ice-delivery-form-address" placeholder="ул. Большая Конюшенная, 19/8">
-              </p>
-              <button class="button send-button" type="submit">Отправить</button>
-            </form>
-          </div>
+         <div class="ice-delivery-form-section">
+            <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+              <form class="ice-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+               <p class="ice-delivery-form-date">
+                  <label for="ice-delivery-form-date">Дата <i class="ice-delivery-form-icon"></i></label>
+                 <input type="date" id="ice-delivery-form-date" name="ice-delivery-form-date" placeholder="01.04.2020">
+                </p>
+               <p class="ice-delivery-form-phone">
+                  <label for="ice-delivery-form-phone">Телефон</label>
+                  <input type="tel" id="ice-delivery-form-phone" name="ice-delivery-form-phone" placeholder="+7 800 999-00-00">
+                </p>
+               <p class="ice-delivery-form-address">
+                 <label for="ice-delivery-form-address">Дата <i class="ice-delivery-form-icon"></i></label>
+                 <input type="text" id="ice-delivery-form-address" name="ice-delivery-form-address" placeholder="ул. Большая Конюшенная, 19/8">
+               </p>
+               <button class="button send-button" type="submit">Отправить</button>
+              </form>
+            </div>
+        </section>
       </section>
 
       <section class="feedback-background">  
@@ -283,58 +286,61 @@
           <button class="button feedback-form-button" type="button">Форма обратной связи</button>
         </div>
       </section>
-      
-  
-     </div>
+
+      </div>
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer-container">
 
-     <section class="footer-social">
-      <ul class="socials">
+      <section class="footer-social">
+        <ul class="socials">
         
-        <li class="socials__item">
-          <a class="socials_link socials_link--vk" href="https://vk.com/htmlacademy" target="_blank">
-            Вконтакте
-          </a>
-        </li>
+          <li class="socials__item">
+            <a class="socials_link socials_link--vk" href="https://vk.com/htmlacademy" target="_blank">
+             VK
+           </a>
+          </li>
   
-        <li class="socials__item">
-          <a class="socials_link socials_link--fb" href="facebook.com/htmlacademy/" target="_blank">
-            Facebook
-          </a>
-        </li>
+         <li class="socials__item">
+            <a class="socials_link socials_link--fb" href="facebook.com/htmlacademy/" target="_blank">
+             FB
+           </a>
+         </li>
   
-        <li class="socials__item">
-          <a class="socials_link socials_link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
-            instagram
-          </a>
-        </li>
-      </ul>
-
-      
-      <section class="faq">
-        <ul class="faq-list">
-          <li class="faq-item">
-            <a class="deliveryman" href="#">Для доставщиков</a>
-          </li>
-          <li class="faq-item">
-            <a class="faq-link" href="#">О производстве</a>
-          </li>
-          <li class="faq-item">
-            <a class="faq-link" href="#">Наши документты</a>
-          </li>
-          <li class="faq-item">
-            <a class="faq-link" href="#">Экологические стандарты</a>
+         <li class="socials__item">
+            <a class="socials_link socials_link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
+             IN
+            </a>
           </li>
         </ul>
-      </section>
+        </section>
 
-      <section class="copyright">
 
-        <a class="copyright-logo" href="https://htmlacademy.ru/"><img src="images/images-footer/logo_htmlacademy.svg" width="93" height="26,71" alt="Логотип академии"></a>
-        <p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a> © 2021</p>
-      </section>
+        <section class="faq">
+          <ul class="faq-list">
+            <li class="faq-item">
+              <a class="deliveryman" href="#">Для доставщиков</a>
+            </li>
+            <li class="faq-item">
+              <a class="faq-link" href="#">О производстве</a>
+            </li>
+            <li class="faq-item">
+              <a class="faq-link" href="#">Наши документты</a>
+            </li>
+            <li class="faq-item">
+              <a class="faq-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="copyright">
+          <a class="copyright-logo" href="https://htmlacademy.ru/"><img src="images/images-footer/logo_htmlacademy.svg" width="93" height="26,71" alt="Логотип академии"></a>
+          <p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a> © 2021</p>
+        </section>
+
+      </div>
     </footer>
+
   </body>
 </html>

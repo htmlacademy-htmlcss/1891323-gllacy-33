@@ -117,6 +117,29 @@ body {
     color: white;
 }
 
+/* Buttons second page */ 
+.navigation-link-current {
+    background-color: #FF2F64;
+    color: white;
+    text-decoration: none;
+}
+
+.filter-accept-button {
+    font-family: inter;
+    background-color: #FFCBD8;
+    color:#2D3440;
+    border-color: #FCFCFC;
+}
+
+.show-more-button {
+    font-family: inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #FCFCFC;
+    color: #2D3440;
+    
+}
 
 
 /* Pages */
@@ -251,7 +274,6 @@ body {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
-    max-width: 443px;
     margin: 56px auto; 
 }
 
@@ -274,6 +296,13 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+}
+
+.first-banner-description {
+    max-width: 321px;
+}
+
+.second-banner-description {
     max-width: 294px;
 }
 
@@ -281,7 +310,6 @@ body {
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 22px;
-    max-width: 321px;
 }
 
 .banner-image-first {
@@ -293,6 +321,8 @@ body {
     padding-top: 19px;
     padding-right: 7px;
 }
+
+
 
 
 
@@ -314,12 +344,14 @@ body {
 
 .popular-products {
     display: flex;
+    max-width: 1170px;
     margin-bottom: 80px;
     justify-content: space-between;
 }
 
 .product-card {
     margin: 0 auto;
+    margin-right: 30px;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
@@ -327,6 +359,10 @@ body {
     color: #565C66;
     background-color: white;
     border-radius: 8px;
+}
+
+.product-card:last-child {
+    margin-right: 0;
 }
 
 .subtitle {
@@ -418,22 +454,29 @@ body {
     color:#565C66;
 }
 
-/* Delivery info section */
+/* Delivery section */
 .ice-delivery {
-    border-radius: 16px;
+    margin-bottom: 80px;
     background-image: url(../images/images-main/form/personal-form-background.jpg);
     background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.ice-delivery-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .ice-delivery-info {
     display: flex;
     flex-direction: column;
-    padding-top: 167px;
-    padding-left: 100px;
+    margin-left: 100px;
     max-width: 371px;
 }
 
 .ice-delivery-title {
+    margin-top: 167px;
+    margin-bottom: 24px;
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
@@ -441,17 +484,22 @@ body {
 
 .ice-delivery-info p {
     color: #565C66;
+    margin-top: 0px;
+    margin-bottom: 163px;
 }
 
-.ice-delivery-form {
-    display: flex;
-    flex-direction: column;
+.ice-delivery-form-section {
+    margin-top: 64px;
+    margin-right: 64px;
+    margin-bottom: 64px;
     width: 500px;
+    height: 406px;
     background-color: #FCFCFC;
-    border-radius: 16px;
+    box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
 }
 
-.input {
+.ice-delivery-form .input {
     font-family: inter;
     font-weight: 400;
     font-size: 16px;
@@ -459,7 +507,6 @@ body {
     color: #B9B9B9;
 }
 
-/* Delivery info form */
 .ice-delivery-form {
     font-family: inter;
     font-weight: 700;
@@ -479,11 +526,23 @@ label {
 
 /* Contact info */
 .feedback-background {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 48px;
     background-image: url("../images/images-main/form/contacts-background.jpg");
     background-repeat: no-repeat;
+    border-radius: 16px;
 }
 
 .feedback {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: 64px;
+    width: 343px;
+    height: 364px;
+    background-color: #FCFCFC;
+    border-radius: 8px;
 }
 
 .feedback p {
@@ -505,6 +564,25 @@ label {
 }
 
 /* Page footer */
+.page-footer-container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.footer-social {
+    width: 104px;
+    margin-right: 299px;
+}
+
+.socials {
+    padding-left: 0;
+}
+
+.faq {
+    max-width: 356px;
+}
+
 .faq-item a {
     font-size: 14px;
     line-height: 20px;
@@ -513,6 +591,11 @@ label {
 }
 .deliveryman {
     font-weight: 700;
+}
+
+.copyright {
+    max-width: 193px;
+    margin-left: auto;
 }
 
 .copyright p {
@@ -528,29 +611,9 @@ label {
 
 
 
-
-/* Catalog styles */
-
-/* Buttons */
-.navigation-link-current {
-    background-color: #FF2F64;
-    color: white;
-    text-decoration: none;
-}
-
-.filter-accept-button {
-    font-family: inter;
-    background-color: #FFCBD8;
-    color:#2D3440;
-}
-
-.show-more-button {
-    font-family: inter;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    background-color: white;
-    color: #2D3440;
+/* Second page */ 
+.breadcrumbs {
+    display: flex;
 }
 
 .breadcrumbs-link {
@@ -599,6 +662,11 @@ label {
     line-height: 20px;
     color:#2D3440;
 }
+
+
+
+
+
 
 
 
