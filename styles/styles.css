@@ -257,7 +257,7 @@ body {
     background: #FCFCFC;
 }
 
-/* Social Media */
+/* Social */
 .socials {
     display: flex;
     flex-direction: row;
@@ -276,17 +276,19 @@ body {
     margin-right: 16px;
 }
 
+/* Part title */
+.part-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    margin: 0 auto;
+    padding-bottom: 56px;
+    text-align: center;
+}
 
 /* Gift cards*/
 .banners {
     display: flex;
-}
-
-.banners-title {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 46px;
-    text-align: center;
 }
 
 .action-banner {
@@ -335,23 +337,9 @@ body {
 }
 
 
-
-
-
-/* Popular products title */
-.products-title {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 46px;
-    text-align: center;
-}
-
 /* Product cards */
-.part-title {
-    max-width: 527px;
-    margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 56px;
+.popular {
+    padding-top: 80px;
 }
 
 .popular-products {
@@ -366,9 +354,14 @@ body {
     line-height: 22px;
     text-align: center;
     width: 270px;
+    margin-right: 30px;
     color: #565C66;
     background-color: white;
     border-radius: 8px;
+}
+
+.product-card:nth-child(4) {
+    margin-right: 0;
 }
 
 .subtitle {
