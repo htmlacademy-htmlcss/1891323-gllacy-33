@@ -11,7 +11,7 @@
     <header class="page-header">
       <nav class="navigation">
 
-          <img class="logo" src="images/images-header/gllacy-logo.svg" width="137" height="56" alt="Логотип магазина Глейси">
+          <img class="navigation-logo" src="images/images-header/gllacy-logo.svg" width="137" height="56" alt="Логотип магазина Глейси">
 
         <ul class="navigation-list">
           <li class="navigation-item"> 
@@ -30,7 +30,9 @@
             <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <button class="button header-button search-button">Поиск</button>
+            <button class="button header-button search-button">
+              <span class="visually-hidden">Поиск</span>
+            </button>
           </li>
           <li class="navigation-item">
             <button class="button header-button signIn-button">Вход</button>
@@ -49,29 +51,43 @@
           <div class="slider">
             
             <article class="slider-item">
-              <h2 class="slider-item-title">Нежный пломбир с клубничным джемом</h2>
-              <p class="slider-item-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом –
-                это идеальный десерт для всей семьи.</p>
-              <a class="button slider-item-button" href="#">Заказать</a>
+              <div class="slider-text-container">
+                <h2 class="slider-item-title">Нежный пломбир с клубничным джемом</h2>
+                <p class="slider-item-description">Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим клубничным джемом<br>–
+                  это идеальный десерт для всей семьи.
+                </p>
+                <a class="button slider-item-button" href="#">Заказать</a>
+              </div>
+
               <img class="slider-item-img" src="images/images-main/main-slider/icecream-1.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
             </article>
            
         
             
             <article class="slider-item">
-              <h2 class="slider-item-title">Сливочное мороженое со вкусом банана</h2>
-              <p class="slider-item-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-              <a class="button slider-item-button" href="#">Заказать</a>
+              <div class="slider-text-container">
+                <h2 class="slider-item-title">Сливочное мороженое со вкусом банана</h2>
+                <p class="slider-item-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
+                   и наслаждение даже в самый жаркий летний день.
+                </p>
+                <a class="button slider-item-button" href="#">Заказать</a>
+              </div>
+
               <img class="slider-item-img" src="images/images-main/main-slider/icecream-2.png" width="306" height="507" alt="Банановое мороженное">
             </article>
             
         
             
             <article class="slider-item">
-              <h2 class="slider-item-title">Карамельный пломбир с маршмеллоу</h2>
-              <p class="slider-item-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-              <a class="button slider-item-button" href="#">Заказать</a>
-              <img class="slider-item-img" src="images/images-main/main-slider/icecream-3.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
+              <div class="slider-text-container">
+                <h2 class="slider-item-title">Карамельный пломбир с маршмеллоу</h2>
+                <p class="slider-item-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
+                  завоюет сердца сладкоежек всех возрастов.
+                </p>
+                <a class="button slider-item-button" href="#">Заказать</a>
+              </div>
+
+                <img class="slider-item-img" src="images/images-main/main-slider/icecream-3.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
             </article>
             
         
@@ -85,34 +101,33 @@
 
             <ul class="slider-bullets">
               <li class="slider-bullets-item">
-                <button class="button slider-bullets-item-button current" type="button">1</button>
+                <button class="button slider-bullets-item-button-current" type="button"></button>
               </li>
               <li class="slider-bullets-item">
-                <button class="button slider-bullets-item-button" type="button">2</button>
+                <button class="button slider-bullets-item-button" type="button"></button>
               </li>
               <li class="slider-bullets-item">
-                <button class="button slider-bullets-item-button" type="button">3</button>
+                <button class="button slider-bullets-item-button" type="button"></button>
               </li>
             </ul>
         
         
             <ul class="socials">
-        
               <li class="socials__item">
-                <a class="socials_link socials_link--vk" href="https://vk.com/htmlacademy" target="_blank">
-                  VK
+                <a class="socials_link socials_link--vk visually-hidden" href="https://vk.com/htmlacademy" target="_blank">
+                  vkontakte
                 </a>
               </li>
         
               <li class="socials__item">
-                <a class="socials_link socials_link--fb" href="facebook.com/htmlacademy/" target="_blank">
-                  FB
+                <a class="socials_link socials_link--fb visually-hidden" href="facebook.com/htmlacademy/" target="_blank">
+                  facebook
                 </a>
               </li>
         
               <li class="socials__item">
-                <a class="socials_link socials_link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
-                  In
+                <a class="socials_link socials_link--inst visually-hidden" href="https://www.instagram.com/htmlacademy/" target="_blank">
+                  instagram
                 </a>
               </li>
             </ul>    
@@ -227,14 +242,16 @@
 
         <div class="news-card news-second-card-background">
           <div class="news-second-card">
-            <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
-              в курсе всего самого вкусного, что у нас происходит. 
-              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="news-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" name="user-email" placeholder="email@example.com">
-              <button class="button send-button" type="submit">Отправить</button>
-            </form>
+            <div class="news-second-card-text-container">
+              <p class="news-second-card-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
+                в курсе всего самого вкусного, что у нас происходит. 
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form class="news-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input type="email" name="user-email" placeholder="email@example.com">
+                <button class="button send-button" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -271,13 +288,16 @@
 
       <section class="feedback-background">  
         <div class="feedback">
-          <p>Адрес главного офиса и офлайн-магазина:</p>
-          <b>наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
-          <p>Для заказов по телефону:</p>
-          <a class="feedback-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <p class="feedback-times">(с 10 до 20 ежедневно)</p>
+          <div class="feedback-content">
+            
+            <p class="feedback-subtitle">Адрес главного офиса<br>и офлайн-магазина:</p>
+            <b class="feedback-address">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</b>
+            <p class="feedback-subtitle-second">Для заказов по телефону:</p>
+            <a class="feedback-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <p class="feedback-times">(с 10 до 20 ежедневно)</p>
 
-          <button class="button feedback-form-button" type="button">Форма обратной связи</button>
+            <button class="button feedback-form-button" type="button">Форма обратной связи</button>
+          </div>
         </div>
       </section>
 
@@ -285,55 +305,55 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer-container">
+      <section class="page-footer-container">
 
-      <section class="footer-social">
+      <div class="footer-social">
         <ul class="socials">
         
           <li class="socials__item">
-            <a class="socials_link socials_link--vk" href="https://vk.com/htmlacademy" target="_blank">
-             VK
+            <a class="socials_link socials_link--vk visually-hidden" href="https://vk.com/htmlacademy" target="_blank">
+             vkontakte
            </a>
           </li>
   
          <li class="socials__item">
-            <a class="socials_link socials_link--fb" href="facebook.com/htmlacademy/" target="_blank">
-             FB
+            <a class="socials_link socials_link--fb visually-hidden" href="facebook.com/htmlacademy/" target="_blank">
+             facebook
            </a>
          </li>
   
          <li class="socials__item">
-            <a class="socials_link socials_link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
-             IN
+            <a class="socials_link socials_link--inst visually-hidden" href="https://www.instagram.com/htmlacademy/" target="_blank">
+             instagram
             </a>
           </li>
         </ul>
-        </section>
+      </div>
 
 
-        <section class="faq">
+        <div class="faq">
           <ul class="faq-list">
             <li class="faq-item">
               <a class="deliveryman" href="#">Для доставщиков</a>
             </li>
             <li class="faq-item">
-              <a class="faq-link" href="#">О производстве</a>
+              <a class="faq-link" href="#">Наши документы</a>
             </li>
             <li class="faq-item">
-              <a class="faq-link" href="#">Наши документты</a>
+              <a class="faq-link" href="#">О производстве</a>
             </li>
             <li class="faq-item">
               <a class="faq-link" href="#">Экологические стандарты</a>
             </li>
           </ul>
-        </section>
+        </div>
 
-        <section class="copyright">
+        <div class="copyright">
           <a class="copyright-logo" href="https://htmlacademy.ru/"><img src="images/images-footer/logo_htmlacademy.svg" width="93" height="26,71" alt="Логотип академии"></a>
           <p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a> © 2021</p>
-        </section>
+        </div>
 
-      </div>
+      </section>
     </footer>
 
   </body>
