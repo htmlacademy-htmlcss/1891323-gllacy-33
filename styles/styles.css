@@ -80,7 +80,7 @@ body {
 }
 
 .slider-item-button {
-    display: inline-block;
+    width: 67px;
     margin-top: 60px;
     background-color: white;
     color: #2D3440;
@@ -200,13 +200,18 @@ body {
 
 .navigation-link {
     display: block;
-    margin-right: 16px;
+    padding: 8px 16px;
     line-height: 20px;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
     text-decoration: none;
     color: #2D3440;
+    border-radius: 26px;
+}
+
+.navigation-link:last-child {
+    margin-right: 0;
 }
 
 
@@ -237,29 +242,49 @@ body {
 }
 
 /* Slider */
-.slider-wrapper {
+.slider {
+    padding-left: 18px;
+}
+
+.slider-item {
     display: flex;
 }
 
-.slider-item-title {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 46px;
+.slider-text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 470px;
 }
 
 .slider-item-title {
+    margin: 0;
+    padding-top: 110px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+    align-items: center;
     max-width: 470px;
 }
 
 .slider-item-description {
-    max-width: 414px;
+    width: 417px;
 }
+
+/* Slider Footer */
+.slider-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* Slider Pagination */
 .slider-bullets {
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .slider-bullets-item-button {
@@ -286,14 +311,15 @@ body {
 /* Social */
 .socials {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 110px;
+    width: 104px;
 }
 
 .socials__item {
-    margin-right: 16px;
+    margin-right: 10px;
     width: 24px;
     height: 24px;
     border-radius: 100px;
@@ -325,8 +351,11 @@ body {
     flex-direction: row;
     width: 570px;
     background-color: #FF7799;
-    padding-left: 40px;
     border-radius: 16px;
+}
+
+.banner-text-container {
+    padding-left: 40px;
 }
 
 .action-banner:first-child {
@@ -334,11 +363,19 @@ body {
 }
 
 .banner-subtitle {
-    margin-top: 40px;
-    margin-bottom: 16px;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 16px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+}
+
+.subtitle-description {
+    margin: 0;
+    padding-bottom: 32px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .first-banner-description {
@@ -349,15 +386,10 @@ body {
     max-width: 294px;
 }
 
-.subtitle-description {
-    margin-bottom: 32px;
-    font-size: 16px;
-    line-height: 22px;
-}
-
 .banner-image-first {
+    margin: 0;
+    padding-left: 13px;
     padding-top: 28px;
-    padding-right: 15px;
 }
 
 .banner-image-second {
@@ -474,6 +506,7 @@ body {
 }
 
 .news-second-card-background {
+    padding: 6px;
     background-image: url("../images/images-main/form/email-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -481,7 +514,18 @@ body {
 }
 
 .news-second-card {
+    background-color: #FCFCFC;
     color:#565C66;
+    border-radius: 16px;
+}
+
+.news-second-card-text-container {
+    padding: 26px 24px 26px 26px;
+}
+
+.news-second-card-description {
+    margin: 0;
+    padding-bottom: 42px;
 }
 
 /* Delivery section */
@@ -550,7 +594,7 @@ label {
     color:#2D3440;
 }
 
-/* Contact info */
+/* Contact info - Feedback */
 .feedback-background {
     padding: 64px 64px 64px;
     background-image: url("../images/images-main/form/contacts-background.jpg");
@@ -561,10 +605,28 @@ label {
 }
 
 .feedback {
-    width: 343px;
-    padding: 40px 0;
+    max-width: 343px;
     background-color: #FCFCFC;
     border-radius: 8px;
+}
+
+.feedback-content {
+    box-sizing: content-box;
+    padding: 40px;
+}
+
+.feedback p {
+    margin: 0
+}
+
+.feedback-subtitle {
+    padding-top: 0px;
+    padding-bottom: 12px;
+}
+
+.feedback-subtitle-second {
+    padding-top: 24px;
+    padding-bottom: 12px;
 }
 
 .feedback b,
@@ -577,6 +639,7 @@ label {
 }
 
 .feedback-times {
+    padding-bottom: 32px;
     font-size: 14px;
     line-height: 20px;
 }
@@ -607,13 +670,12 @@ label {
     padding: 0;
 }
 
-.faq-item {
-    margin-right: 24px;
-    align-items: flex-start;
+.faq-item:nth-child(1) {
+    padding-right: 24px;
 }
 
-.faq-item:nth-child(2n) {
-    margin-right: 0;
+.faq-item:nth-child(3) {
+    padding-right: 40px;
 }
 
 .faq-item a {
@@ -717,6 +779,7 @@ label {
 
 .pagination-wrapper {
     display: flex;
+    align-items: center;
 }
 
 .pagination {
