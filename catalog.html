@@ -64,13 +64,15 @@
           <h1 class="inner-header-title">Сливочное мороженное</h1>
         </header>
 
-        <section class="catalog-products">
+        <!--Группа фильтров - начало-->
+
+        <section class="catalog-products-filter">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group filter-sorting">
               <legend class="catalog-filter-title">Сортировка:</legend>
               <label class="control">
-                <select class="select-control" aria-label="Сортировка" name="products-sorting">
+                <select class="select-control" aria-label="Сортировка" aria-placeholder="по популярности" name="products-sorting">
                   <option value="popular">Сначала популярное</option>
                   <option value="cheap">Сначала дешёвое</option>
                   <option value="expensive">Сначала дорогое</option>
@@ -78,7 +80,7 @@
               </label>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group filter-price">
               <legend class="catalog-filter-title">Цена:</legend>
     
               <label class="catalog-filter-label">
@@ -97,7 +99,7 @@
               </button>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group filter-fat">
               <legend class="catalog-filter-title">Жирность</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -127,7 +129,7 @@
                </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group filter-ice-fillers">
                 <legend class="catalog-filter-title">Наполнители:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -166,6 +168,8 @@
             <button class="button filter-accept-button" type="submit">Применить</button>
           </form>
         </section>
+
+        <!--  Группа фильтров - конец-->
 
         <!--Начало первого ряда товаров-->
         <section class="product-card-list">
@@ -315,7 +319,7 @@
               <p>Сливочный пломбир с ментоловым сиропом</p>
               <b class="product-card-price">320 ₽/кг</b>
               <button class="add-to-basket" type="button"></button>
-            <div class="product-card-content"></div>
+            </div>
           </article>
 
           <article class="product-card">
@@ -393,21 +397,21 @@
           <ul class="socials">
           
             <li class="socials-item">
-              <a class="socials-link socials-link-vk visually-hidden" href="https://vk.com/htmlacademy" target="_blank">
-               vkontakte
-             </a>
-            </li>
-    
-           <li class="socials-item">
-              <a class="socials-link socials-link-fb visually-hidden" href="facebook.com/htmlacademy/" target="_blank">
-               facebook
-             </a>
-           </li>
-    
-           <li class="socials-item">
-              <a class="socials-link socials-link-inst visually-hidden" href="https://www.instagram.com/htmlacademy/" target="_blank">
-               instagram
+              <a class="socials-link socials-link-vk" href="https://vk.com/htmlacademy" target="_blank">
+                <span class="visually-hidden">Вконтакте</span>
               </a>
+             </li>
+     
+            <li class="socials-item">
+               <a class="socials-link socials-link-fb" href="https://www.facebook.com/htmlacademy/" target="_blank">
+                 <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+     
+            <li class="socials-item">
+               <a class="socials-link socials-link-inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
+                 <span class="visually-hidden">Инстаграм</span>
+               </a>
             </li>
           </ul>
           </section>
