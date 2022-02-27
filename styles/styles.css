@@ -70,6 +70,26 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 4px solid rgba(252, 252, 252, 1);
+}
+
+.button:focus {
+  background-color: rgba(252, 252, 252, 1);
+  border: 4px solid rgba(45, 52, 64, 1);
+}
+
+.button:active {
+  background-color: rgba(252, 252, 252, 1);
+  border: 4px solid rgba(252, 252, 252, 0); ;
+}
+
+.button:disabled {
+  background-color: rgba(231, 231, 231, 1);
+  border-color: rgba(252, 252, 252, 0, 4);
+}
+
 .header-button {
   padding: 4px 16px 4px 40px;
   min-width: 32px;
@@ -79,7 +99,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
-  border: none;
+  border: 2px solid rgba(252, 252, 252, 0);
 }
 
 .search-button {
@@ -93,25 +113,6 @@ body {
   margin-top: 60px;
   background-color: #fcfcfc;
   color: #2d3440;
-}
-
-.button:hover {
-  background-color: rgba(252, 252, 252, 0.3);
-  border-color: rgba(252, 252, 252, 1);
-}
-
-.button:focus {
-  background-color: rgba(252, 252, 252, 1);
-  border: 2px solid rgba(45, 52, 64, 1);
-}
-
-.button:active {
-  background-color: rgba(252, 252, 252, 1);
-}
-
-.button:disabled {
-  background-color: rgba(231, 231, 231, 1);
-  border-color: rgba(252, 252, 252, 0, 4);
 }
 
 /* Main slider button*/
@@ -132,7 +133,7 @@ body {
   padding: 0;
   width: 12px;
   height: 12px;
-  border: 1px;
+  box-shadow: ();
   border-radius: 100px;
 }
 
@@ -164,6 +165,7 @@ body {
   line-height: 20px;
   background-color: #fcfcfc;
   color: #2d3440;
+  border: rgba(252, 252, 252, 0,4)
 }
 
 .add-to-basket {
@@ -309,6 +311,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: #2d3440;
+  border: 2px solid rgba(252, 252, 252, 0);
   border-radius: 26px;
 }
 
@@ -319,6 +322,7 @@ body {
 .header-button:hover,
 .navigation-link:hover {
   background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid rgba(252, 252, 252, 0);
 }
 
 .header-button:focus,
@@ -330,7 +334,6 @@ body {
 .header-button:active,
 .navigation-link:active {
   background-color: rgba(252, 252, 252, 1);
-  border: none;
 }
 
 .contacts-phone {
@@ -472,17 +475,21 @@ body {
 }
 
 .socials-item {
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  width: 24px;
-  height: 24px;
-  background-color: 2px solid rgba(252, 252, 252, 0.2);
   margin-right: 16px;
 }
 
 .socials-item:last-child {
   margin-right: 0;
+}
+
+.socials-link {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(252, 252, 252, 0.2);
+  border-radius: 100px;
 }
 
 /* Social icons */
@@ -493,8 +500,7 @@ body {
   bottom: 0;
   left: 0;
   fill:rgba(231, 231, 231, 1);
-  border: 2px solid rgba(252, 252, 252, 0.2);
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 .socials-icon:hover {
