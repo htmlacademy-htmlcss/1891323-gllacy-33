@@ -622,7 +622,7 @@ fill: #2d3440;
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
-  margin-right: 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   max-width: 104px;
@@ -1063,7 +1063,6 @@ fill: #2d3440;
 }
 
 /* Input label */
-
 label {
   display: inline-block;
   margin-bottom: 8px;
@@ -1232,6 +1231,10 @@ label {
   color: #2d3440;
 }
 
+.field {
+
+}
+
 /* Footer icons*/
 .deliveryman::before {
   position: absolute;
@@ -1248,6 +1251,10 @@ label {
   left: 0;
 }
 
+
+
+
+
 /* Second page */
 
 /* Breadcrumbs*/
@@ -1260,15 +1267,37 @@ label {
 
 .breadcrumbs-item {
   margin-right: 28px;
+  position: relative;
+  display: block;
 }
 
-.breadcrumbs-item:last-child {
-  margin-right: 0;
+.breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icons/chevrons-right.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  top: 5px;
+  right: -20px;
+}
+
+.breadcrumbs-item:last-child::after{
+  content: none;
+}
+
+.breadcrumbs-item {
+  border-bottom: 1px solid #2d3440;
+}
+
+.active.breadcrumbs-item {
+  border: none;
 }
 
 .breadcrumbs-link {
   font-weight: 700;
   color: #2d3440;
+  text-decoration: none
 }
 
 /* Catalog title */
@@ -1299,7 +1328,7 @@ label {
   margin-left: 0;
   margin-right: 24px;
   padding: 0;
-  background-color: #ffcbd8;
+  background-color: rgba(252, 252, 252, 0.3);
   border: 0;
   border-radius: 20px;
 }
@@ -1343,18 +1372,18 @@ label {
   color: #2d3440;
 }
 
+/* Filters */
+/* Sorting filter select*/
+.filter-sorting {
+  width: 196px;
+}
+
 .select-control {
   font-family: inter;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
-}
-
-/* Filters */
-/* Sorting filter*/
-.filter-sorting {
-  width: 196px;
 }
 
 /* Price filter*/
@@ -1389,25 +1418,62 @@ label {
 
 .pagination {
   display: flex;
+  box-sizing: border-box;
   justify-content: flex-end;
   list-style: none;
-  width: 454px;
+  width: 450px;
   margin-right: 40px;
   padding: 0;
 }
 
-.pagination-item {
-  padding: 9px 6px;
-}
-
-.pagination-item:last-child {
-  padding: 0;
-}
-
-.pagination-current {
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
   padding: 2px 8px;
   width: 24px;
   height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.pagination-current {
   background-color: #fcfcfc;
-  border-radius: 50px;
+}
+
+.pagination-link:hover {
+  background-color: rgba(231, 231, 231, 0.3);
+  border-color: #fcfcfc;
+}
+
+.pagination-link:focus {
+  background-color: rgba(231, 231, 231, 0.3);
+  border-color: #2d3440;
+}
+
+.pagination-link:active {
+  background-color: #ff2f64;
+  border-color: #ff2f64;
+}
+
+.pagination-prev {
+  position: relative;
+  
+}
+
+.pagination-icon-prev {
+  position: absolute;
+  fill: rgba(45, 52, 64, 0.2);
+  top: 4px;
+  right: 16px;
+}
+
+.pagination-next {
+  position: relative;
+}
+
+.pagination-icon-next {
+  position: absolute;
+  fill: rgba(45, 52, 64, 1);
+  top: 4px;
+  left: 24px;
 }
