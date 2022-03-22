@@ -20,13 +20,13 @@
             <div class="dropdown">
               <a class="navigation-link dropbtn" href="catalog.html">Каталог</a>
 
-              <div class="dropdown-content">
-                <a class="dropdown-link" href="#">Новинки</a>
-                <a class="dropdown-link" href="#">Сливочное</a>
-                <a class="dropdown-link" href="#">Щербеты</a>
-                <a class="dropdown-link" href="#">Фруктовый лед</a>
-                <a class="dropdown-link" href="#">Мелорин</a>
-              </div>
+              <ul class="dropdown-content">
+                <li class="dropdown-link dropdown-title-link"><a href="#">Новинки</a></li>
+                <li class="dropdown-link"><a href="#">Сливочное</a></li>
+                <li class="dropdown-link"><a href="#">Щербеты</a></li>
+                <li class="dropdown-link"><a href="#">Фруктовый лед</a></li>
+                <li class="dropdown-link"><a href="#">Мелорин</a></li>
+              </ul>
             </div>
 
           </li>
@@ -564,7 +564,7 @@
         <div class="faq">
           <ul class="faq-list">
             <li class="faq-item">
-              <a class="deliveryman" href="#">Для доставщиков</a>
+              <a class="deliveryman" href="#">Для поставщиков</a>
             </li>
             <li class="faq-item">
               <a class="faq-link" href="#">Наши документы</a>
@@ -586,6 +586,9 @@
       </section>
     </footer>
 
+    <!--Modal container 
+    - remove/add 'modal-container-close' to div "modal-container" for modal menu appeareance-->
+
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
@@ -605,12 +608,12 @@
             </p>
             <p class="field-group">
               <label class="visually-hidden" for="user-feedback">Свободное поле отзыва</label>
-              <input class="auth-form-feedback-field field" type="text" id="user-feedback" name="user-feedback" placeholder="В свободной форме">
+              <textarea class="auth-form-feedback-field field" id="user-feedback" name="user-feedback" placeholder="В свободной форме"></textarea>
             </p>
-          </form>
 
-          <button class="button auth-form-button send-button" type="submit">Отправить</button>
-        </section>
+            <button class="button auth-form-button send-button" type="submit">Отправить</button>
+          </section>
+          </form>
       </div>
     </div>
 
