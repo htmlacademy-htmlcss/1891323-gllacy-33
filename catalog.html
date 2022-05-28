@@ -9,7 +9,7 @@
     <header class="page-header">
   
       <header class="page-header">
-        <nav class="navigation">
+        <nav class="navigation catalog-navigation">
   
             <a class="navigation-logo" href="index.html">
               <img src="images/images-header/gllacy-logo.svg" width="137" height="56" alt="Логотип магазина Глейси">
@@ -40,11 +40,8 @@
               <button class="button header-button signin-button">Вход</button>
             </li>
             <li class="navigation-item">
-              <button class="button header-button cart-button">
+              <button class="button header-button cart-button cart-button-filled">
                 2 товара
-                <svg class="navigation-cart-icon-active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.645874 1.15623C0.645874 0.78804 0.944351 0.489563 1.31254 0.489563H3.91999C4.23774 0.489563 4.51133 0.71382 4.57369 1.02539L5.11879 3.74887H15.6535C15.8522 3.74887 16.0405 3.83749 16.1672 3.99058C16.2938 4.14366 16.3456 4.34526 16.3084 4.54042L15.2654 10.0095L15.2644 10.0145L15.2644 10.0145C15.1743 10.4681 14.9276 10.8756 14.5673 11.1655C14.209 11.454 13.761 11.608 13.3011 11.6008H6.97639C6.51652 11.608 6.06854 11.454 5.71016 11.1655C5.35008 10.8757 5.10338 10.4685 5.0132 10.0151L5.01308 10.0145L3.92432 4.57477C3.91985 4.55652 3.91612 4.53797 3.91319 4.51917L3.37353 1.8229H1.31254C0.944351 1.8229 0.645874 1.52442 0.645874 1.15623ZM6.5285 12.8755C5.80055 12.8755 5.21043 13.4656 5.21043 14.1936C5.21043 14.9215 5.80055 15.5117 6.5285 15.5117C7.25644 15.5117 7.84656 14.9215 7.84656 14.1936C7.84656 13.4656 7.25644 12.8755 6.5285 12.8755ZM13.6985 12.8755C12.9705 12.8755 12.3804 13.4656 12.3804 14.1936C12.3804 14.9215 12.9705 15.5117 13.6985 15.5117C14.4264 15.5117 15.0166 14.9215 15.0166 14.1936C15.0166 13.4656 14.4264 12.8755 13.6985 12.8755Z" fill="#2D3440"/>
-                </svg>
               </button>
             </li>
           </ul>
@@ -67,7 +64,7 @@
             </li>
             
           </ul>
-          <h1 class="inner-header-title">Сливочное мороженное</h1>
+          <h1 class="inner-header-title">Сливочное мороженое</h1>
         </header>
 
         <!--Filter group - start-->
@@ -75,6 +72,7 @@
         <section class="catalog-products-filter">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
+          <!--First filter row-->
           <div class="filter-group-row-first">
             <fieldset class="catalog-filter-group filter-sorting">
               <legend class="catalog-filter-title">Сортировка:</legend>
@@ -94,7 +92,7 @@
 
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 30px; width: 68px">
+                  <div class="range-bar" style="left: 36px; width: 68px">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -119,28 +117,28 @@
               <ul class="catalog-filter-list">
 
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control control-fat">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="0%">
                     <span class="control-mark"></span>
                     <span class="control-label">0%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control control-fat">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="less-than-10%" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">до 10%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control control-fat">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="less-than-30%">
                     <span class="control-mark"></span>
                     <span class="control-label">до 30%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control control-fat">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="more-than-30%">
                     <span class="control-mark"></span>
                     <span class="control-label">выше 30%</span>
@@ -149,10 +147,12 @@
                </ul>
               </fieldset>
           </div>
+
+          <!--Second filter row-->
           <div class="filter-group-row-second">
               <fieldset class="catalog-filter-group filter-ice-fillers">
 
-                <legend class="catalog-filter-title">Наполнители:</legend>
+                <legend class="catalog-filter-title filter-filler-title">Наполнители:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -169,7 +169,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control control-fruits">
                       <input class="visually-hidden control-input" type="checkbox" name="product-group" value="fruit-tipping">
                       <span class="control-mark"></span>
                       <span class="control-label">фрукты</span>
@@ -478,7 +478,7 @@
         <div class="page-footer-container">
   
         <section class="footer-social">
-          <ul class="socials">
+          <ul class="socials catalog-footer-socials">
           
             <li class="socials-item">
               <a class="socials-link" href="https://vk.com/htmlacademy" target="_blank">
@@ -510,10 +510,10 @@
           </section>
   
   
-          <section class="faq">
+          <section class="faq catalog-faq">
             <ul class="faq-list">
               <li class="faq-item">
-                <a class="deliveryman" href="#">Для доставщиков</a>
+                <a class="deliveryman" href="#">Для поставщиков</a>
               </li>
               <li class="faq-item">
                 <a class="faq-link" href="#">Наши документы</a>
